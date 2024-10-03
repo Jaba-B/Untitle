@@ -39,6 +39,32 @@
   flex-direction: column;
 }
 
+.Main-rightside {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Label-typography {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.Value-typography {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
 .Divider {
   margin: 50px 0;
   width: 0.4vw;
