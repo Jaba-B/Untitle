@@ -1,3 +1,6 @@
+/* previous color #45a29e */
+/* new color #17B169 */
+
 .App {
   text-align: center;
 }
@@ -39,7 +42,7 @@
 .Divider {
   margin: 50px 0;
   width: 0.4vw;
-  background-color: #45a29e;
+  background-color: #17B169;
   border-radius: 6px;
 }
 
@@ -67,14 +70,15 @@ input[type="file"] {
 
 .Footer-p {
   margin-right: 20px;
-  color: #66fcf1;
+  /* color: #66fcf1; */
+  color: #17B169;
   font-size: x-large;
   font-weight: 600;
 }
 
 .Input {
   background-color: #1f2833;
-  border: 3px solid #45a29e;
+  border: 3px solid #17B169;
   padding: 0 10px;
   height: 30px;
   width: 150px;
@@ -94,7 +98,8 @@ input[type="file"] {
   padding: 0 20px;
   height: 34px;
   background-color: #1f2833;
-  border: 3px solid #45a29e;
+  /* border: 3px solid #45a29e; */
+  border: 3px solid #17B169;
   color: white;
   font-size: large;
   font-weight: 600;

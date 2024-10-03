@@ -7,11 +7,15 @@ function App() {
   const [image, setImage] = useState("");
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
+  const [length, setLength] = useState("");
+  const [width, setWidth] = useState("");
+
   const [imageInfo, setImageInfo] = useState("");
 
   const handleImgChange = (e) => {
     const file = e.target.files[0];
-    const fileName = e.target.files[0].name;
+    const fileName = file.name;
+
     setImage(file);
     axios
       .post("-----api-----", { name: fileName })
@@ -26,9 +30,9 @@ function App() {
       {/* Header */}
 
       <header className="Header">
-        <p>Text</p>
-        <p className="Logo">Logo</p>
-        <p>Text</p>
+        <p div="Logo">
+          <img src="/logo.png" alt="logo" width={400} height={80} />
+        </p>
       </header>
 
       {/* Main */}
@@ -69,6 +73,20 @@ function App() {
             onChange={(e) => setLongitude(e.target.value)}
           />
           <input
+            className="Input"
+            type="text"
+            placeholder="length"
+            value={length}
+            onChange={(e) => setLength(e.target.value)}
+          />
+          <input
+            className="Input"
+            type="text"
+            placeholder="width"
+            value={width}
+            onChange={(e) => setWidth(e.target.value)}
+          />
+          <input
             className="Btn"
             type="submit"
             value="Send"
@@ -77,6 +95,8 @@ function App() {
               toast.success("Coordinates successfully sent");
               setLatitude("");
               setLongitude("");
+              setLength("");
+              setWidth("");
             }}
           />
         </form>
