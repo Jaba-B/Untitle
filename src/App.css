@@ -20,11 +20,43 @@
   margin: 0 20px;
 }
 
+.Ul {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Anchor {
+  color: #c5c6c7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Active-anchor {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .Main {
-  height: 80vh;
+  height: 75vh;
   background-color: #1f2833;
   display: flex;
   flex-direction: row;
+}
+
+.Main-header {
+  height: 5vh;
+  text-align: center;
+  margin: 0;
+  background-color: #1f2833;
+  color: #17B169;
+  padding: 5px 0;
+}
+
+.Loading {
+  margin: 0;
+  color: white;
 }
 
 .Main-sides {
@@ -37,6 +69,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.Img-container {
+  height: 500px;
+}
+
+.Image {
+  height: 100%;
+  object-fit: contain;
+  max-width: 500px;
 }
 
 .Main-rightside {
@@ -82,10 +124,6 @@ input[type="file"] {
   margin-bottom: 70px;
 }
 
-.Image {
-  height: 500px;
-}
-
 .Footer {
   background-color: #0b0c10;
   height: 10vh;
@@ -94,41 +132,59 @@ input[type="file"] {
   justify-content: center;
 }
 
-.Footer-p {
-  margin-right: 20px;
-  /* color: #66fcf1; */
-  color: #17B169;
-  font-size: x-large;
-  font-weight: 600;
-}
-
 .Input {
   background-color: #1f2833;
   border: 3px solid #17B169;
   padding: 0 10px;
   height: 30px;
-  width: 150px;
-  margin-right: 20px;
+  width: 300px;
   color: white;
   font-size: large;
   font-weight: 600;
   border-radius: 4px;
+  text-align: center;
 }
 
 .Input::placeholder {
   color: #c5c6c7;
   font-weight: 600;
+  text-align: center;
 }
 
 .Btn {
   padding: 0 20px;
   height: 34px;
   background-color: #1f2833;
-  /* border: 3px solid #45a29e; */
   border: 3px solid #17B169;
-  color: white;
+  color: #17B169;
   font-size: large;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.Home {
+  height: 80vh;
+  background-color: #1f2833;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.Home-p {
+  margin-right: 20px;
+  color: #17B169;
+  font-size: x-large;
+  font-weight: 600;
+  margin: 40px 0;
 }
