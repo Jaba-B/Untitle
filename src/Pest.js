@@ -23,7 +23,7 @@ function Pest() {
 
     const formData = new FormData();
     formData.append("file", image);
-    formData.append("model", "l");
+    formData.append("model", "p");
 
     try {
       const response = await axios.post(
